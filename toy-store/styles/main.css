@@ -1,8 +1,25 @@
+/*==================================================
+1. RESET & BASE STYLES
+==================================================*/
 *{
 	margin: 0;
 	padding:0;
 	box-sizing:border-box;
 }
+body {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 60px;
+	font-family: verdana, sans-serif;
+	border: solid 2px #ffffff;
+	line-height: 1.5;
+	background-color:#fff4e6;
+	}
+	
+/*==================================================
+2. NAVBAR
+==================================================*/
+
 .navbar{
 	position: fixed;
 	top:0;
@@ -23,25 +40,9 @@
 	margin-left:15px;
 	font-weight: bold;
 	}
-			
-body {
-	margin: 0 auto;
-	width: 1500px;
-	padding-top: 60px;
-	font-family: verdana, sans-serif;
-	border: solid 2px #ffffff;
-	line-height: 1.5;
-	}
-		
-.content {
-	padding: 20px;
-	height: 2000px;
-	background-color:#fff4e6;
-	}
 nav a:hover{
 	color:#be9b7b;
-}
-
+}			
 header {
 	background-color:#be9b7b;
 	padding: 30px;
@@ -51,14 +52,112 @@ header {
 header img {
 	padding: 5px 20px;
 }
+
+/* Category Quick-Jump Bar (Product Page)*/
+.category-nav {
+	display:flex;
+	justify-content:center;
+	gap:15px;
+	background-color:#BE9B7B;
+	padding: 12px;
+	flex-wrap:wrap;
+}
+.category-nav a{
+	color: #ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	padding: 6px 14px;
+	border-radius:20px;
+	background-color:#854442;
+	font-size:0.9rem;
+	transition: background-color 0.2s ease;
+
+}
+.category-nav a:hover{
+	background-color:#5E1C23;
+}
+/*==================================================
+3. MAIN CONTENT & SECTIONS
+==================================================*/
+.content {
+	padding: 20px;
+	height: 2000px;
+	background-color:#fff4e6;
+	}
+
 section{
 	margin: 15px;
 	background-color:#854442;
 	padding: 15px;
 	border-radius: 10px;
 	color: #ffffff;
-	line-height: 1.8
+	line-height: 1.8;
+	scroll-margin-top: 80px; /* Offset  for internal page jump links*/
 }
+.section-title{
+	text-align: center;
+	color:#ffffff;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	
+}
+/*==================================================
+4. FEATURED CATEGORIES & PRODUCT GRIDS
+==================================================*/
+
+.categories-section{
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 0 20px;
+	
+}
+.categories-grid,
+product-grid{
+	display: grid;
+	grid-template-columns: repeat (auto-fit, minmax(280 px, 1fr));
+	gap: 25px;
+	
+}
+.category-card,
+product-card{
+	background-color: #ffffff;
+	border: 2px solid #1a5c4d;
+	border-radius: 12px;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+		
+}
+.category-card:hover,
+product-card:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+	
+}
+.card-image img,
+.product-img img{
+	width:100%;
+	height:250px;
+	object-fit:cover;
+	
+}
+.card-content,
+.product-info{
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	flex-grow:1;
+	
+}
+.card-content h3,
+.product-info h3{
+	color: #605246;
+	margin:0 0 0 8px 0;
+}
+
+
 footer {
 	background-color:#854442; 
 	margin-bottom: 0;
@@ -69,58 +168,10 @@ footer {
 	width: 100%;
 	
 }
-.categories-section{
-	max-width: 1200px;
-	margin: 40px auto;
-	padding: 0 20px;
-	
-}
-.section-title{
-	text-align: center;
-	color:#ffffff;
-	font-size: 2 rem;
-	margin-top: 10px;
-	margin-bottom: 30px;
-	
-}
-.categories-grid{
-	display: grid;
-	grid-template-columns: repeat (auto-fit, minmax(280 px, 1fr));
-	gap: 25px;
-	
-}
-.category-card{
-		background-color: #ffffff;
-		border: 2px solid #1a5c4d;
-		border-radius: 12px;
-		overflow:hidden;
-		display:flex;
-		flex-direction:column;
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-		
-}
-.category-card:hover{
-	transform: translateY(-5px);
-	box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-	
-}
-.card-image img{
-	width:100%;
-	height:250px;
-	object-fit:cover;
-	
-}
-.card-content{
-	padding:20px;
-	display: flex;
-	flex-direction: column;
-	flex-grow:1;
-	
-}
-.card-content h3{
-	color: #605246;
-	margin:0 0 0 5px 0;
-}
+
+
+
+
 .age-tag{
 	display:inline-block;
 	background-color: #B1c7D4;
