@@ -13,7 +13,31 @@
 			}
 			.color{
 			color: #5e0b00;}
-
+            .contact-form{
+                display:flex;
+                flex-direction:column;
+                gap:15px;
+                margin-top:15px;
+            }
+            .contact-form label {
+                display:block;
+                font-weight:bold;
+                margin-bottom:5px;
+            }
+            .contact-form input,
+            .contact-form select,
+            .contact-form textarea {
+                width:100%;
+                padding:10px;
+                border-radius:5px;
+                border:1px solid #ccc;
+                font-family: Verdana, sans-serif;
+            }
+            .contact-form .btn{
+                align-self:flex-start;
+                padding:12px 25px;
+                font-size:1rem;
+            }
 		</style>
 		
     </head>
@@ -54,20 +78,20 @@
 			<!-- Message Form Section -->
 			<section>
 			  <h2>Send Us a Message</h2>
-			  <form style="display: flex; flex-direction: column; gap: 15px; margin-top: 15px;">
+			  <form class="contact-form">
 				<div>
-				  <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Name:</label>
-				  <input type="text" id="name" name="name" placeholder="Full Name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: Verdana, sans-serif;">
+				  <label for="name">Your Name:</label>
+				  <input type="text" id="name" name="name" placeholder="Full Name" required>
 				</div>
 
 				<div>
-				  <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Email:</label>
-				  <input type="email" id="email" name="email" placeholder="email@example.com" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: Verdana, sans-serif;">
+				  <label for="email"">Your Email:</label>
+				  <input type="email" id="email" name="email" placeholder="email@example.com" required>
 				</div>
 
 				<div>
-				  <label for="subject" style="display: block; font-weight: bold; margin-bottom: 5px;">Subject:</label>
-				  <select id="subject" name="subject" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: Verdana, sans-serif;">
+				  <label for="subject">Subject:</label>
+				  <select id="subject" name="subject">
 					<option value="general">General Question</option>
 					<option value="events">Catering</option>
 					<option value="parties">Birthday Parties</option>
@@ -76,11 +100,11 @@
 				</div>
 
 				<div>
-				  <label for="message" style="display: block; font-weight: bold; margin-bottom: 5px;">Message:</label>
-				  <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: Verdana, sans-serif;"></textarea>
+				  <label for="message">Message:</label>
+				  <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
 				</div>
 
-				<button type="submit" class="btn" style="align-self: flex-start; padding: 12px 25px; font-size: 1rem;">Send Message</button>
+				<button type="submit" class="btn">Send Message</button>
 			  </form>
 			</section>
 
