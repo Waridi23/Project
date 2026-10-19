@@ -1,0 +1,287 @@
+/* ===================
+1. BODY & RESET
+====================== */
+:root {
+    --moss-green: #4a5d3e;
+    --moss-dark: #35442c;
+    --moss-light: #e6eae2;
+    --terracotta: #c86d51;
+    --terracotta-dark: #a34e35;
+    --bg-cream: #f9f7f2;
+    --card-bg: #ffffff;
+    --text-dark: #2c3523;
+    --text-muted: #6e6458;
+    --border-color: #e2dacd;
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/*==================
+ 2. HEADER & LOGO
+====================== */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--border-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--moss-green);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--moss-green);
+}
+
+.logo-text span {
+    font-size: 0.85rem;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* ==============
+3. NAVIGATION
+================*/
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--moss-green);
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 2px solid var(--moss-green);
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    display: block;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--moss-green);
+    color: #ffffff;
+}
+nav a:hover{
+	transform: translateY(-2px) scale(1.06);
+}
+
+/*============
+ 4. SECTIONS
+ ==============
+ */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    background: linear-gradient(rgba(74, 93, 62, 0.85), rgba(74, 93, 62, 0.85)), 
+                url('../images/hero-banner.png') center/cover;
+    color: #ffffff;
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-banner h2 {
+    margin-top: 0;
+	color:#ffffff;
+    font-size: 2rem;
+}
+
+.content-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--terracotta);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+}
+
+h2, h3 {
+    color: var(--moss-green);
+}
+
+/* =========
+5. LISTS
+============*/
+ul.check-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.check-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+ul.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--moss-green);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+ul.flame-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.flame-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+ul.flame-list li::before {
+    content: "🔥";
+    position: absolute;
+    left: 0;
+}
+
+ol.styled-steps {
+    padding-left: 20px;
+}
+
+ol.styled-steps li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+ol.styled-steps li::marker {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+/*=========
+6. PRICING
+=========== */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.price-card {
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--moss-green);
+}
+
+.price-card.featured {
+    border-color: var(--terracotta);
+    background-color: #fffaf8;
+}
+
+.price-card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--terracotta);
+    margin: 10px 0;
+}
+
+/*==========
+7. FORMS
+ ===========*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+button.btn {
+    background-color: var(--terracotta);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+button.btn:hover {
+    background-color: var(--terracotta-dark);
+}
+
+/*===========================
+ 8. FOOTER
+ ============================*/
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
