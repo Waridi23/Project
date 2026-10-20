@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name ="viewport" content= "width=device-width, initila-scale=1.0">
+		<meta name = "keywords" content= ""
+		<meta name= "description" content= "">
+		<link rel= "stylesheet" href= "styles/main.css">
+		<title>Header & Navigation Template</title>
+		<style>
+			:root{
+				--nav-bg: #f8fafc;
+				--nav-text:#334155;
+				--nav-hover-bg:#0284c7;
+				--nav-active-bg:#0f172a;
+				--border-color: #e2e8f0;
+				
+				--bg-main:f1f5f9;
+				--card-bg:#ffffff;
+				--primary-color: #0f172a;
+				--accent-color: #0284c7;
+				--text-dark:#334155;
+				--text-muted:#64748b;
+				--border-color: #e2e8f0;
+				--shadow-sm:0 4px 12px rgba(0, 0, 0, 0.05);
+				
+				}
+				
+			* {
+				box-sizing:border-box;
+				margin:0;
+				padding:0
+			}
+			
+			body{
+				font-family: 'Plus Jakarta Sans', sans-serif;
+				background-color: var(--bg-main);
+				color: var (--text-dark);
+				padding: 24px;
+				max-width: 1100px;
+				margin:0 auto;
+				}
+				
+			.site-header{
+				background-color: var (--card-bg);
+				border:1px solid var (--border-color);
+				border-radius:16px;
+				padding: 24px 32px;
+				margin-bottom: 24px;
+				box-shadow: var(--shadow-sm);
+				display:text;
+				justify-content: space-between;
+				align-items:center;
+				flex-wrap:wrap;
+				gap:16px;
+				}
+			
+			.brand-area{
+				display:flex;
+				align-items:center;
+				gap:16px;
+				}
+				
+			.logo-badge {
+				width:48px;
+				height:48px;
+				background-color: var (--accent-color);
+				color:#ffffff;
+				border-radius: 12px;
+				display:flex;
+				align-items:center;
+				justify-content: center;
+				font-weight: 700;
+				font-size: 1.4rem;
+				box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25);
+				}
+				
+			.header-titles h1 {
+				font-size:1.75rem;
+				color: var(--prmiary-color);
+				line-height:1.2;
+				}
+				
+			.header-titles p{
+				font-size:0.95rem;
+				color:var(--text-muted);
+				margin-top:2px;
+				}
+			.header-actions{
+				display:flex;
+				gap:12px;
+				}
+			.btn{
+				padding:10px 20px;
+				border-radius:8px;
+				font-weight: 600;
+				font-size: 0.9rem;
+				text-decoration:none;
+				transition:all 0.2s ease;
+				}
+			.btn-primary{
+				background-color: var(--primary-color);
+				color:#ffffff;
+			}
+			.btn-primary:hover{
+				background-color:var(--accent-color);
+				}
+			
+			.page-layout{
+				display:flex;
+				gap: 24px;
+				align-items:flex-start;
+				}
+			nav {
+				width:220px;
+				flex-shrink:0
+				
+				}
+				
+			nav ul{
+				list-style-type:none;
+				margin:0 ;
+				padding:8px;
+				background-color: #f1f1f1;
+				background-color: var(--nav-bg);
+				border: 1px solid var (--border-color);
+				border-radius:12px;
+				box-shaodw:var (--shadow-sm);
+			}
+			
+			nav li {
+				margin-bottom:4px;
+			}
+			
+			nav li:last-child {
+				margin-bottom:0;
+				}
+			nav li a {
+				display:block;
+				font-weight: 600;
+				font-size:0.95rem;
+				color: var(--text-dark);
+				padding: 10px 14px;
+				text-decoration:none;
+				border-radius:8px;
+				border:2px solid transparent;
+				transition: all 0.25s ease;
+			}
+			nav li a:hover{
+				background-color:var (--accent-color);
+				color:#000000;
+				font-weight:700;
+				transform: translateX(6px);
+				box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+			}
+			nav li a.active{
+				background-color:var (--primary-color);
+				color: #fffff;
+				border-color:var(--primary-color);
+				
+			}
+			main{
+				flex:1;
+				background-color:var(--card-bg);
+				border:1px solid var(--border-color);
+				border-radius:12px;
+				padding:28px;
+				box-shadow: var(--shadow-sm);
+				}
+		</style>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="brand-area">
+				<div class="logo-badge">
+				&#9829;
+				</div>
+				<div class="header-titles">
+					<h1> Studio Workspace </h1>
+					<p> Building clean, responsive digital solutions. </p>
+				</div>
+			</div>
+			<div class="header-actions">
+				<a href="contact.html" class= "btn btn-primary"> Get in Touch </a>
+			</div>
+			
+		</header>
+		<div class= "page-layout">
+		
+			<nav>
+				<ul>
+					<li> <a href= "index.html"> Home </a> </li>
+					<li> <a href= "contact.html"> Contact Us </a> </li>
+					<li> <a href = "about.html"> About Us </a> </li>
+					<li> <a href= "news.html"> News </a> </li>
+				</ul>
+			</nav>
+			
+			<main> 
+				<h2> Welcome Back</h2>
+				<p> Your main page content will go inside this section. </p>
+				
+			</main>
+		</div>
+		
+	</body>
+
+</html>
