@@ -23,6 +23,7 @@
 				--text-muted:#64748b;
 				--border-color: #e2e8f0;
 				--shadow-sm:0 4px 12px rgba(0, 0, 0, 0.05);
+				--shadow-hover:0 10px 20px rgba (2, 132, 199, 0.12);
 				
 				}
 				
@@ -169,6 +170,165 @@
 				padding:28px;
 				box-shadow: var(--shadow-sm);
 				}
+			.main-intro{
+				margin-bottom:24px;
+				}
+			.main-intro h2{
+				color:var(--primary-color);
+				font-size:1.5rem;
+			}
+			.stat-grid{
+				display:grid;
+				grid-template-columns:repeat(auto-fit,min-max(180px, 1fr));
+				gap:16px;
+				margin-bottom:30px;
+			}
+			.stat-card{
+				background-color: var(--bg-main);
+				border: 1px solid var(--border-color);
+				border-radius:12px;
+				padding: 16px 20px;
+				border-left: 4px solid var(--accent-color);
+				}
+			.stat-card .stat-label{
+				font-size: 1.6rem;
+				font-weight:700;
+				color:var(--primary-color);
+				margin-top: 4px;
+				}
+			.section-title{
+				font-size:1.15rem;
+				color:var(--primary-color);
+				margin-bottom: 16px;
+				border-bottom:2px solid var(--bg-main);
+				padding-bottom:8px;
+				}
+			.card-grid{
+				display:grid;
+				grid-template-columnd:repeat(auto-fit, minmax(220px, 1fr));
+				gap:16px;
+				margin-bottom:30px;
+			.content-card{
+				background:#ffffff;
+				border:1px solid var(--border-color);
+				border-radius:12px;
+				padding:20px;
+				transition:transform 0.25s ease, box-shadow 0.25s ease;
+				}
+			.content-card:hover{
+				transform:translatY(-4px);
+				box-shadow:var(--shadow-hover);
+				}
+			.content-card h3{
+				font-size:1.1rem;
+				color:var(--primary-color);
+				margin-bottom: 8px;
+				}
+			.content-card p{
+				font-size: 0.9rem;
+				color: var(--text-muted);
+				line-height: 1.5;
+				margin-bottom: 14px;
+				}
+			.card-tag{
+				display:inline-block;
+				background-color:var(--accent-light);
+				color:var(--accent-color);
+				font-size: 0.75rem;
+				font-weight:700;
+				padding: 4px 10px;
+				border-radius: 20px;
+				}
+			.activity-list{
+				list-style-type:none;
+				}
+			.activity-item {
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				padding: 12px 16px;
+				background-color: var(--bg-main);
+				border-radius: 8px;
+				margin-bottom:8px;
+				font-size: 0.9rem;
+				}
+			.activity-item:last-child{
+				margin-bottom:0;
+				}
+			.activity-item .date {
+				font-size:0.8rem;
+				color:var(--text-muted);
+				font-weight: 600;
+			}
+			.shop-grid{
+				display:grid;
+				grid-template-columnd: repeat(auto-fit, minmax(220px, 1fr));
+				gap:16px;
+				margin-bottom: 30px;
+				}
+			.product-card{
+				background:#ffffff;
+				border:1px solid var(--border-color);
+				border-radius: 12px;
+				overflow:hidden;
+				transition:transform 0.25s ease, box-shadpw 0.25s ease;
+				display:flex;
+				flex-direction:column;
+				}
+			.product-card:hover{
+				transform:translateY(-4px);
+				box-shadow: var(--shadow-hover);
+				}
+			.product-image-box{
+				height:150px;
+				background-color: var(--bg-main);
+				display:flex;
+				align-items:center;
+				justify-content: center;
+				color:var(--text-muted);
+				font-size:0.85rem;
+				position:relative;
+				}
+			.badge-tag{
+				position:absolute;
+				top:10px;
+				left:10px;
+				background-color: var (--primary-color);
+				color:#ffffff;
+				font-size:0.7rem;
+				font-weight:700;
+				padding: 3px 8px;
+				border-radius:12px;
+				
+				}
+			.product-details{
+				padding:16px;
+				display:flex;
+				flex-direction:column;
+				flex-grow: 1;
+				}
+			.product-details h4{
+				color:var(--primary-color);
+				font-size:1rem;
+				margin-bottom: 4px;
+				
+			}
+			.product-details p{
+				color:var(--text-muted);
+				font-size:0.85rem;
+				margin-bottom:12px;
+				
+			.product-action{
+				margin-top:auto;
+				display:flex;
+				justify-content: space-between;
+				align-items:center;
+				padding-top: 10px;
+				border-top: 1px solid var(--bg-main);
+				
+				}
+			
+			
 		</style>
 	</head>
 	<body>
@@ -199,8 +359,70 @@
 			</nav>
 			
 			<main> 
-				<h2> Welcome Back</h2>
-				<p> Your main page content will go inside this section. </p>
+				<div class="main-intro">
+					<h2> Welcome Back</h2>
+					<p> Your main page content will go inside this section. </p>
+				</div>
+				
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-label"> Active Projects </div>
+						<div class="stat-number"> 12 </div>
+					</div>
+					
+					<div class="stat-card">
+						<div class= "stat-label"> Completed </div>
+						<div class="stat-number"> 48</div>
+					</div>
+					
+					<div class="stat-card"> 
+						<div class= "stat-label"> Client Rating </div>
+						<div class="stat-number"> 4.9 &starf; </div>
+					</div>
+				</div>
+				
+				<h3 class="section-title"> Featured Highlights </h3>
+				<div class="card-grid">
+					<article class="content-card">
+						<h3> Web Design System </h3>
+						<p> Cemtralized CSS design variables, color palletes, and compnonent rulesets. </p>
+						<span class= "card-tag"> CSS3/ HTML5 </span>
+
+					</article>
+					
+					<article class="content-card">
+						<h3> Interactive Studio </h3>
+						<p> Custom responsive layouts with smooth micro-interactions.</p>
+						<span class= "card-tag"> UI/UX </span>
+					</article>
+					
+					<article class="content-card"> 
+						<h3> Group Projects </h3>
+						<p> Collaborative web applications built for clarity, speed, etc.</p>
+						<span class= "card-tag"> Frontend </span>
+					</article>
+					
+				</div>
+				
+				<h3 class="section-title"> Recent Activity </h3>
+				<ul class ="activity-list"> 
+					<li class="activity-item">
+						<span> Updated global CSS color variables in <code>main.css</code></span>
+						<span class="date"> OCt 18,2026 </span>
+					</li>
+					
+					<li class="activity-item">
+						<span> Added new responsive navigation sidebar template. </span>
+						<span class="date"> Oct 18, 2026 </span>
+					</li>
+					
+					<li class="activity-item">
+						<span> Published new cooking class culinary project preview </span>
+						<span class="date"> Oct 15, 2026 </span>
+					</li>
+					
+				</ul>
+				
 				
 			</main>
 		</div>
