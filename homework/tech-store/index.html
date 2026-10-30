@@ -5,24 +5,30 @@
         <meta name="keywords" content="Computers, Laptops, PCs, Desktop, Business, Gaming PC, Custom Build, Computer Repair">
         <meta name="description" content="Shop reliable custom gaming PCs, refurbished laptops, and desktop computers at The Computer Depot. Custom engineering, fleet upgrades, and expert hardware support.">
         <title>The Computer Depot | Custom PCs, Laptops & Workstations</title>
-        <link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="icon" href="images/logo.png">
+		<style>
+			.left{
+				float:left;
+				}
+		</style>
     </head>
     <body>
         <header>
+			<img src="images/logo.png" alt="Computer Depot Logo" width="200" class="left">
             <h1>The Computer Depot</h1>
             <h3>Built for Power. Engineered for Reliability</h3>
             <p>Your trusted partner for high-performance computing systems, professional workstations, and custom desktop engineering.</p>
         </header>
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="price.html">Browse Computers</a> 
-                    <a href="contact.html">Contact Us</a> 
-                </li>
-            </ul>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+					<a href="price.html">Browse Computers</a> 
+					<a href="contact.html">Contact Us</a> 
+				</li>
+			</ul>
         </nav>
-
         <main>
             <section>
                 <h2>Next-Generation Performance, Configured for You</h2>
@@ -47,9 +53,98 @@
                 </ul>
             </section>
         </main>
-        <footer>
-            <p>&copy; Copyright 2026 | All Rights Reserved | The Computer Depot</p>
-        </footer>
+        <footer class="site-footer">
+			<!--Topbar: Hardware Guarantees /Trusted Badges -->
+			<div class="footer-trust-bar">
+				<div class="trust-item">
+					<span class="trust-icon"> &#9881 </span>
+					<div>
+						<p><strong> 24-Hour Stress Tested </strong></p>
+						<p> Every rig custom-benchmark before dispatch </p>
+					</div>
+				</div>
+				<div class="trust-item">
+					<span class="trust-icon">&#128737;</span>
+					<div>
+						<strong>2-Year Depot Warranty</strong>
+						<p>Full hardware replacement and lab support</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Middle Section: Brand, Restock Alerts & Nav Columns -->
+			<div class="footer-main-grid">
+				
+				<!-- Brand & Newsletter Column -->
+				<div class="footer-brand-col">
+					<div class="footer-logo">
+						<span class="logo-badge">&#9881;</span>
+						<h3>The Computer Depot</h3>
+					</div>
+					<p class="brand-desc">
+						Engineered performance workstations, custom desktop gaming rigs, and high-reliability enterprise fleet hardware.
+					</p>
+
+					<!-- Restock Alert Form -->
+					<div class="footer-newsletter">
+						<h4>Get Restock & Hardware Alerts</h4>
+						<form action="#" method="post" class="newsletter-form">
+							<input type="email" placeholder="Enter email for GPU drops..." required>
+							<button type="submit" class="btn-newsletter">Subscribe</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Navigation Columns -->
+				<div class="footer-col">
+					<h4>Systems & Hardware</h4>
+					<ul class="footer-links">
+						<li><a href="price.html">Custom Gaming Rigs</a></li>
+						<li><a href="price.html">Pro Workstations</a></li>
+						<li><a href="price.html">Laptops & Mobility</a></li>
+						<li><a href="price.html">Enterprise Fleets</a></li>
+						<li><a href="price.html">Refurbished Specials</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Support & Lab</h4>
+					<ul class="footer-links">
+						<li><a href="contact.html">Technical Support</a></li>
+						<li><a href="#">Warranty Claim Portal</a></li>
+						<li><a href="#">Driver & BIOS Downloads</a></li>
+						<li><a href="#">Custom Build Guide</a></li>
+						<li><a href="#">System Diagnostics</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Company</h4>
+					<ul class="footer-links">
+						<li><a href="#">About Depot Engineering</a></li>
+						<li><a href="contact.html">Depot HQ & Lab Hours</a></li>
+						<li><a href="#">Careers & Lab Techs</a></li>
+						<li><a href="#">Commercial Quotes</a></li>
+						<li><a href="#">Terms of Sale</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- Bottom Bar: Legal & System Status -->
+			<div class="footer-bottom">
+				<p>&copy; 2026 The Computer Depot Inc. All rights reserved.</p>
+				<div class="footer-legal-links">
+					<a href="#">Privacy Policy</a>
+					<span class="divider">•</span>
+					<a href="#">Terms of Service</a>
+					<span class="divider">•</span>
+					<a href="#">Security & Compliance</a>
+				</div>
+			</div>
+		</footer>
     </body>
 </html>
+
+
 
