@@ -100,6 +100,19 @@ FLOATING HEDER & NAVIATION
     justify-content: space-between;
     gap:20px;
 }
+.header-titles h1 {
+	font-size:1.75rem;
+	color: var(--text-main);
+	line-height:1.2;
+	padding: 5px 10px;
+}
+				
+.header-titles p{
+	font-size:0.95rem;
+	color:var(--text-sub);
+	margin-top:2px;
+	padding: 5px 10px 10px;
+}
 .logo{
     display: flex;
     align-items:center;
@@ -109,9 +122,18 @@ FLOATING HEDER & NAVIATION
     font-size:1.2rem;
     letter-spacing: -0.02em;
 }
-.logo-icon{
-    font-size:1.1rem;
-    color:var(--accent);
+.logo-badge {
+	width:50px;
+	height:50px;
+	background-color: var(--bg-card);
+    color:var(--text-light);
+	border-radius: 12px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 1.4rem;
+	box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25);
 }
 .nav-pill {
     background-color: rgba(255,255,255,0.08);
@@ -152,6 +174,7 @@ FLOATING HEDER & NAVIATION
     gap:8px;
 }
 .btn-ghost{
+    margin:8px 16px;
     padding:8px 16px;
     font-size:0.85rem;
     font-weight:500;
