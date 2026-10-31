@@ -1,0 +1,167 @@
+/*========================================
+BODY RESETS
+==========================================*/
+:root{
+    /*---CORE SURFACES & CANVAS ---*/
+    --bg-main: #f2f7f4;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8faf9;
+    --bg-dark: #0d2b22;
+
+    /*---TEXT FONT & HIERACHY ---*/
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarelll, sans-serif;
+    --font-code: 'Consolas', 'Cascadia Code', 'Source Code Pro', Monaco, monospace;
+    --text-main: #101c19;
+    --text-sub: #4a6358;
+    --text-light: #8cb89d;
+    --text-white: #ffffff;
+
+    /*--ACCENTS & INTERACTIVE STATES ---*/
+    --primary: #2d6a4f;
+    --primary-hover: #1d4d3a;
+    --accent: #52b788;
+    --accent-gold: #d4af37;
+
+    /*--- BORDERS & DIVIDERS ---*/
+    --line: #d1e4d7;
+    --line-focus: #52b788;
+
+    /*--- LAYERED SHADOWS ---*/
+    --shadow-sm: 0 2px 8px rgba(13,43, 34, 0.05);
+    --shadow-md: 0 8px 24px rgba(13,43, 34, 0.08);
+    --shadow-lg: 0 16px 40px rgba(13,43, 34, 0.14);
+    --shadow-glow: 0 0 20px rgba(82, 183, 136, 0.25);
+
+    /*---CORNER RRADII ---*/
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 9999px;
+
+    /*--- MICRO-INTERACTIONS & ANIMATIONS ---*/
+    --ease-fast: all 0.15s ease;
+    --ease-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size:100%;
+    height:100%;
+}
+
+body{
+    min-height:100vh;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column
+}
+main{
+    flex:1;
+    width: 100%
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+/*========================================
+FLOATING HEDER & NAVIATION
+==========================================*/
+
+/*Sticky Glass Bar*/
+.siteheader{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    background-color: rgba(13, 43, 34, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(209, 228, 215, 0.12);
+    padding: 12px, 42px;
+}
+.header-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:20px;
+}
+.logo{
+    display: flex;
+    align-items:center;
+    gap:8px;
+    color:var(--text-white);
+    font-weight:700;
+    font-size:1.2rem;
+    letter-spacing: -0.02em;
+}
+.logo-icon{
+    font-size:1.1rem;
+    color:var(--accent);
+}
+.nav-pill {
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 4px 6px;
+    border-radius: var(--radius-pill);
+}
+.nav-list{
+    display:flex;
+    align-items: center;
+    gap:4px;
+    list-style-type:none;
+}
+.nav-link{
+    display:block;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color:var(--text-light);
+    border-radius: var(--radius-light);
+    transition: var(--ease-fast);
+}
+.nav-link:hover{
+    color:var(--text-white);
+    background-color:rgba(255,255,255,0.1);
+}
+.nav-link.active{
+    background-color: var(--bg-card);
+    color:var(--bg-dark);
+    font-weight:600;
+}
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.btn-ghost{
+    padding:8px 16px;
+    font-size:0.85rem;
+    font-weight:500;
+    color: var(--text-white);
+    border-radius:var(--radius-pill);
+    transition: var(--ease-fast);
+}
+.btn-ghost:hover{
+    background-color: var(--bg-card);
+    color: var(--bg-dark);
+    transform: translateY(-1px);
+    box-shadow:var(--shadow-glow);
+}
+/*RESPONSIVE HIDE FOR PILL ON MOBILE VIEWPORTS*/
+@media (max-width:880px){
+    .nav-pill{
+        display:none;
+    }
+}
