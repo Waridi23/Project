@@ -60,6 +60,7 @@ body{
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.6;
+    font-family:var(--font-main);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     display: flex;
@@ -90,7 +91,8 @@ FLOATING HEDER & NAVIATION
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(209, 228, 215, 0.12);
-    padding: 12px, 42px;
+    padding: 12px 42px;
+    flex-wrap:wrap;
 }
 .header-container{
     max-width: 1280px;
