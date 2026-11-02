@@ -112,7 +112,7 @@ FLOATING HEDER & NAVIATION
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--text-white);
+    color: var(--text-main);
     font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -121,7 +121,7 @@ FLOATING HEDER & NAVIATION
 .logo-symbol {
     color: var(--accent);
     font-size: 1.2rem;
-    animation: rotateSlow 20s linear infinite;
+    animation: rotateSlow 10s linear infinite;
 }
 
 /* Floating Navigation Capsule */
@@ -148,7 +148,7 @@ FLOATING HEDER & NAVIATION
     padding: 7px 18px;
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--text-light);
+    color: var(--bg-dark);
     border-radius: var(--radius-pill);
     transition: var(--ease-smooth);
 }
@@ -185,7 +185,7 @@ FLOATING HEDER & NAVIATION
 }
 
 .btn-ghost {
-    color: var(--text-white);
+    color: var(--text-dark);
     padding: 9px 18px;
     font-size: 0.85rem;
     font-weight: 500;
@@ -269,7 +269,7 @@ FLOATING HEDER & NAVIATION
 }
 
 .hero-text-block h1 {
-    color: var(--text-white);
+    color: var(--text-sub);
     font-size: 3.5rem;
     line-height: 1.08;
     letter-spacing: -0.03em;
@@ -283,7 +283,7 @@ FLOATING HEDER & NAVIATION
 }
 
 .hero-text-block p {
-    color: rgba(255, 255, 255, 0.85);
+    color:var(--text-sub);
     font-size: 1.1rem;
     max-width: 480px;
     margin-bottom: 28px;
@@ -371,7 +371,7 @@ FLOATING HEDER & NAVIATION
     inset: -6px;
     border-radius: 50%;
     border: 2px solid var(--accent);
-    animation: pulseRing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: pulseRing 3s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
 .card-info small {
@@ -469,13 +469,14 @@ FLOATING HEDER & NAVIATION
 FOOTER
 =====================================================*/
 .site-footer{
-	background-color: var(--card-bg, #1E293B);
-	border: 1px solid var(--border-color, #334155);
+	flex: 1;
+	background-color: var(--bg-dark);
+	border: 1px solid var(--accent-light, #334155);
 	border-radius: 16px;
 	padding: 36px 32px 24px 32px;
 	margin-top: 40px;
-	box-shadow: var(--sghadow-sm, 0 4px 12px rgba(0, 0, 0, 0.05));
-	color: #F8FAFC;
+	box-shadow: var(--shadow-glow, 0 4px 12px rgba(0, 0, 0, 0.05));
+	color: var(--text-light);
 }
 .footer-trust-bar {
     display: grid;
@@ -498,13 +499,13 @@ FOOTER
 
 .trust-icon {
     font-size: 1.5rem;
-    color: var(--accent-light, #38bdf8);
+    color: var(--primary);
 }
 
 .trust-item strong {
     display: block;
     font-size: 0.88rem;
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 .trust-item p {
@@ -545,7 +546,7 @@ FOOTER
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: var(--accent-light, #38bdf8);
+    color: var(--accent-gold);
     margin-bottom: 8px;
 }
 
@@ -570,9 +571,8 @@ FOOTER
 }
 
 .btn-newsletter {
-    background-color: var(--accent-color, #0284c7);
-    color: #ffffff;
-    border: none;
+    color:var(--accent-gold);
+	border: none;
     padding: 10px 16px;
     border-radius: 8px;
     font-size: 0.85rem;
@@ -583,13 +583,16 @@ FOOTER
 }
 
 .btn-newsletter:hover {
-    background-color: #0369a1;
+    background-color:var(--accent-gold);
+	color: var(--text-white);
+	transform: translateX(4px);
+	transition: var(--ease-smooth);
 }
 
 /* Nav Link Columns */
 .footer-col h4 {
     font-size: 0.95rem;
-    color: var(--accent-light, #38bdf8);
+    color: var(--accent-gold, #38bdf8);
     margin-bottom: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -614,7 +617,7 @@ FOOTER
 }
 
 .footer-links a:hover {
-    color: var(--accent-light, #38bdf8);
+    color: var(--accent-gold, #38bdf8);
     transform: translateX(4px);
 }
 
@@ -673,6 +676,5 @@ FOOTER
         align-items: flex-start;
     }
 }
-
 
 
