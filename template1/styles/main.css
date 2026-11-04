@@ -571,7 +571,8 @@ FOOTER
 }
 
 .btn-newsletter {
-    color:var(--accent-gold);
+	background-color: rgba(13, 43, 34, 0.08);
+    color:var(--text-white);
 	border: none;
     padding: 10px 16px;
     border-radius: 8px;
@@ -583,8 +584,8 @@ FOOTER
 }
 
 .btn-newsletter:hover {
-    background-color:var(--accent-gold);
-	color: var(--text-white);
+    background-color: rgba(13,43, 34, 0.10);
+	color: var(--accent-gold);
 	transform: translateX(4px);
 	transition: var(--ease-smooth);
 }
