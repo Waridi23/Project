@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an example of forms">
+    <title> 12-2 Forms</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1> Gaming Information</h1>
+
+        <p> Enter Name: <input type="text" name="studentname" id="name" placeholder="Student Name" autofocus required></p>
+        <p>Enter password: <input type="password" name="password" id="pw" placeholder="Password"></p>
+        <p> Enter number of years gaming:<input type="number" name="age" id ="age" max-length="19"> </p>
+
+        <p> Number of hours played weekly:</p>
+        <p>
+            <label> < 5 hours a week</label>
+            <input type="radio" id="choice1" name="choice1"> <br>
+            <label> 5 to 10 hours a week</label>
+            <input type="radio" id="choice2" name="choice2"> <br>
+            <label> > 10 horus a week </label>
+            <input type="radio" id="choice3" name="choice3"> 
+
+        </p>
+
+        <p> Gaming Console:</p>
+        <p>
+            <input type="checkbox" id = "Xbox" name="console" value="Xbox">
+            <label for="Xbox"> Miccrosoft Xbox</label>
+
+            <input type="checkbox" id = "ps5" name="console" value="ps5">
+            <label for="ps5"> Sony PlayStation 5</label>
+
+            <input type="checkbox" id = "switch" name="console" value="switch">
+            <label for="switch"> Nintendo Switch</label>
+
+            <input type="checkbox" id = "other" name="console" value="Xbox">
+            <label for="other"> Other</label>
+        </p>
+        <button type="submit"> Submit</button>
+        <button type="reset"> Reset</button>
+    </form>
+</body>
+</html>
