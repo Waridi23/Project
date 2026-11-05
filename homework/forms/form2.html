@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an example of forms">
+    <title> 12-2 Forms</title>
+    <style>
+        .form-container{
+            border:3px solid blue;
+            width: 500px;
+            padding: 20px 25px;
+            font-family: Arial, sans-serif;
+            box-sizing:border-box;
+        }
+        .form-group{
+            display:grid;
+            grid-template-columns: 160px 1fr;
+            row-gap: 8px;
+            align-items:center;
+            margin-bottom: 15px;
+        }
+        fieldset{
+            border:2px solid blue;
+        }
+        .form-container h1{
+            color: blue;
+            margin-top:0;
+            margin-bottom: 15px;
+        }
+        .form-container h2{ 
+            margin-top:18px;
+            margin-bottom:12px;
+        }
+        .form-group label{
+            color:blue;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"]{
+            width:100%;
+            padding:3px 5px;
+            border: 1px solid #767676;
+            font-size:13px;
+            box-sizing:border-box;
+        }
+        .form-group input::placeholder{
+            color: #8E8E8E;
+        }
+        .form-group input [type="checkbox"]{
+            justify-self: start;
+            margin:0;
+            width: 14px;
+            height:14px;
+        }
+        .button-group{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top: 15px;
+        }
+        .button-group button{
+            background-color: #D3D3D3;
+            border-top:2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid #404040;
+            border-bottom: 2px solid #404040;
+            padding: 3px 25px;
+            font-size: 14px;
+            color: #000;
+            cursor:pointer;
+        }
+        .button-group button:active{
+            border-left: 2px solid #404040;
+            border-right: 2px solid #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+    <h1>Please complete our survey</h1>
+
+    <form action="#" method="get">
+    <fieldset
+      
+        <!-- Contact information section -->
+        <h2>Contact information</h2>
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lastname">
+        </div>
+
+        <!-- Geographic information section -->
+        <h2>Geographic information</h2>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Two characters" maxlength="2">
+
+            <label for="zip">Zip code:</label>
+            <input type="text" id="zip" name="zipcode" placeholder="Five digits" maxlength="5">
+        </div>
+
+        <!-- Survey checkboxes section -->
+        <h2>How did you hear about us?</h2>
+        <div class="form-group">
+            <label for="web-search">Web Search:</label>
+            <input type="checkbox" id="web-search" name="source" value="Web Search">
+
+            <label for="facebook">Facebook:</label>
+            <input type="checkbox" id="facebook" name="source" value="Facebook">
+
+            <label for="twitter">Twitter:</label>
+            <input type="checkbox" id="twitter" name="source" value="Twitter">
+
+            <label for="email-msg">Email message:</label>
+            <input type="checkbox" id="email-msg" name="source" value="Email message">
+        </div>
+
+        <!-- Footer section -->
+        <h2>Thank you for taking our survey!</h2>
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </fieldset>
+
+    </form>
+  </div>
+
+</body>
+</html>
