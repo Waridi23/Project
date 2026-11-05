@@ -1,1 +1,272 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content = "This is a survey to determine the music listening habits of people in St. Louis for Tunes Records">
+    <title> Tunes Records - St. Louis Music Survey</title>
+    
+    <style>
+        body{
+            font-family:'Segoe UI', Verdana, Sans-serif;
+            background-color: #E0E0E0;
+            margin:0;
+            padding: 30px 15px;
+            display:flex;
+            justify-content: center;
+        }
+        .form-container{
+            background-color: #1A1A24;
+            border: 2px solid #71385c;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(138,43,226,0.3)
+        }
+        h1{
+            color: #2f8181e0;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            text-shadow: 0 0 10px rgba(0,255,255,0.4)
+
+        }
+        h2 {
+            color: #71385c;
+            text-align: center;
+            font-size:1.2rem;
+            margin-top:0;
+            font-weight: 400;
+
+        }
+        .subtitle{
+            text-align:center;
+            color: #A0A0B0;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+
+        }
+        fieldset{
+            border: 1px solid #3d3d5c;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #222230;
+        }
+        legend{
+            color: #00ffff;
+            font-weight: bold;
+            padding: 0 10px;
+            font-size: 1.05rem;
+        }
+        .form-group{
+            margin-bottom: 18px;
+        }
+        label{
+            display:block;
+            margin-bottom: 6px;
+            font-weight: normal;
+            font-size: 0.85rem;
+            color: #A0A0B0;
+        }
+        label em{
+            font-weight: normal;
+            font-size: 0.85rem;
+            color: #A0A0B0;
+        }
+        input [type="text"],
+        input[type="email"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #444466;
+            border-radius: 6px;
+            background-color: #121218;
+            color: #ffffff;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+
+        }
+        input [type="text"]: focus,
+        input [type="email"]: focus,
+        select:focus,
+        textarea:focus{
+            outline:none;
+            border-color:#8A2BE2;
+            box-shadow: 0 0 8px rgba(138, 43, 226, 0.5);
+        }
+        .radio-group,
+        .checkbox-group{
+            display:flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .radio-group,
+        .checkbox-group{
+            display: flex;
+            flex-direction:column;
+            gap:8px;
+            margin-top: 6px;
+        }
+        .radio-group label,
+        .checkbox-group label{
+            font-weight:normal;
+            cursor:pointer;
+            display;flex;
+            align-items:center;
+            gap: 8px;
+        }
+        input [type="radio"],
+        input [type="checkbox"]{
+            accent-color:#8A2BE2;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        select [multiple]{
+            height: 110px;
+            padding: 6px;
+        }
+        select [multiple] option{
+            padding: 6px;
+            border-radius: 4px;
+        }
+        .button-group{
+            display:flex;
+            gap: 15px;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .btn{
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor:pointer;
+            transition: transform 0.1s ease, background-color 0.3s;
+        }
+        .btn-submit{
+            background-color: #8A2BE2;
+            color:white;
+
+        }
+        .btn-submit:hover{
+            background-color: #9D4EDD;
+            transform: translateX(5px)
+        }
+        .btn-reset{
+            background-color: #9D4EDD;
+        }
+        .btn-reset:hover{
+            background-color: #555566;
+            transform: translateX(5px);
+        }
+        .btn:active{
+            transform: scale (0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1> Tunes Records </h1>
+        <h2> St.Louis Music Listening Survey</h2>
+        <p class="subtitle"> Help us understand the music listening habits of St. Louis residents!</p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend> Personal Information </legend>
+
+                <div class="form-group">
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" name="name" placeholder="enter your full name" autofocus required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"> Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Listening Habits</legend>
+
+                <div class="form-group">
+                    <label for ="frequent"> Do you frequently listen to music?</label>
+                    <select id="frequent" name="frequent">
+                        <option value="yes"> Yes</option>
+                        <option value="no"> No</option>
+                    </select>
+                </div>     
+                
+                <div class="form-group">
+                    <label> When are you most likely to listen to music? <em>(Select one)</em></label>
+                    <div class=" "radio-group">
+                        <label> <input type="radio" name="listen-time" value="car">In the Car</label>
+                        <label><input type="radio" name="listen-time" value="exercising"> While Excercising</label>
+                        <label><input type="radio" name="listen-time" value="school">At school</label>
+                        <label><input type="radio" name="listen-time" value="meals">During meals</label>
+                        <label><input type="radio" name="listen-time" value="all-day"> All day long</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend> Music & Device Preferences</legend>
+
+                <div class="form-group">
+                    <label> What type(s) of music do you prefer?<em> (Check all that apply)</em></label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="genre" value="jazz">Jazz</label>
+                        <label> <input type="checkbox" name="genre" value="rock"> Rock</label>
+                        <label><input type="checkbox" name="genre" value="rap">Rap</label>
+                        <label><input type="checkbox" name="genre" value="country">Country</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="devices"> What device(s) do you use to listen to music?<em> (Hold Ctrl or Cmd to select multiple)</em></label> 
+                    <select id="devices" name="devices" siz="4" multiple>
+                        <option value="radio"> Radio/Stereo </option>
+                        <option value="phone">Phone</option>
+                        <option value="computer">Computer</option>
+                        <option value="mp3">MP3 Player</option>
+                        <option value="other"> Other devices</option>
+                    </select>                 
+                </div>
+                <div class="form-group">
+                    <label for="streaming"> favorite Streaming service: </label>
+                    <input type="text" id="streaming" name="streaming_service" list="streaming-list" placeholder="Select or type a service">
+                    <datalist id="streaming-list">
+                        <option value="Spotify">
+                        <option value="Pandora">
+                        <option value="iHeartRadio">
+                    </datalist>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Feedback</legend>
+
+                <div class="form-group">
+                    <label for="comments">Additional comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tell us more about your favorite artists or listening habits..."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Form Action Buttons -->
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">Submit Questionnaire</button>
+                <button type="reset" class="btn btn-reset">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
