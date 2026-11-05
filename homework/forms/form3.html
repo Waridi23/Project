@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is an example of forms">
     <title> 12-2 Forms</title>
+    <style>
+        body{
+            margin: 20px 25px;
+        }
+    </style>
 </head>
 <body>
     <form action="#" method="get">
@@ -16,12 +21,14 @@
 
         <p> Number of hours played weekly:</p>
         <p>
+            <input type="radio" id="choice1" name="choice1"> 
             <label> < 5 hours a week</label>
-            <input type="radio" id="choice1" name="choice1"> <br>
+            <br>
+            <input type="radio" id="choice2" name="choice2"> 
             <label> 5 to 10 hours a week</label>
-            <input type="radio" id="choice2" name="choice2"> <br>
-            <label> > 10 horus a week </label>
+            <br>
             <input type="radio" id="choice3" name="choice3"> 
+            <label> > 10 horus a week </label>
 
         </p>
 
@@ -29,13 +36,13 @@
         <p>
             <input type="checkbox" id = "Xbox" name="console" value="Xbox">
             <label for="Xbox"> Miccrosoft Xbox</label>
-
+            <br>
             <input type="checkbox" id = "ps5" name="console" value="ps5">
             <label for="ps5"> Sony PlayStation 5</label>
-
+            <br>
             <input type="checkbox" id = "switch" name="console" value="switch">
             <label for="switch"> Nintendo Switch</label>
-
+            <br>
             <input type="checkbox" id = "other" name="console" value="Xbox">
             <label for="other"> Other</label>
         </p>
