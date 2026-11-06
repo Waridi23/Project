@@ -363,6 +363,7 @@ GALLRY SECTION
     padding: 4rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: var(--bg-dark);
 }
 
 .gallery-header {
