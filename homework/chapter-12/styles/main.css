@@ -329,6 +329,7 @@ BODY SECTIONS
 .section-title{
     color: var(--accent-gold);
     font-size: 2rem;
+    margin-top:2rem;
     margin-bottom: 2rem;
     text-align:center;
 
@@ -569,7 +570,7 @@ REVIEW SECTION
 }
 .faq-container{
     display: grid;
-    grid-template-columns: repeat(auti-fut, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 1.5rem;
 }
 .faq-item{
