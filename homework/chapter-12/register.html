@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="yoga registration, sign up, contact, member join, studio membership">
+    <meta name="description" content="Register for classes or contact Sunshine Yoga Studio to begin your wellness journey today.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/logo.png">
+    <title>Sunshine Yoga Studio - Register & Contact</title>
+</head>
+<body>
 
+    <!-- Header & Navigation -->
+    <div class="hero-wrapper subpage-wrapper">
+        <header class="site-header-floating">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Sunshine Yoga Studio logo" height="100">
+                    <span class="logo-text">Sunshine Yoga Studio</span>
+                </a>
+                <nav class="nav-pill">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="class.html" class="nav-link">Classes</a></li>
+                        <li><a href="register.html" class="nav-link active">Register</a></li>
+                        <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="index.html#faq" class="btn-ghost">FAQ</a>
+                    <a href="register.html" class="btn-pill-glow">Join Now</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Subpage Banner -->
+        <section class="subpage-banner">
+            <div class="subpage-banner-content">
+                <span class="hero-pill-tag">Begin Your Journey</span>
+                <h1>Member <span class="text-accent-gold">Registration</span></h1>
+                <p>Fill out the form below to reserve your studio pass, request private coaching, or get in touch with our team.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Main Content -->
+    <div class="body-sections">
+
+        <section class="form-wrapper-section">
+            <div class="form-card-container">
+                
+                <div class="form-card-header">
+                    <h2>Join Sunshine Yoga Studio</h2>
+                    <p>Please complete all required fields below. We will send a confirmation pass to your email.</p>
+                </div>
+
+                <form action="#" method="post" class="registration-form">
+
+                    <!-- Fieldset 1: Contact Information (Text Inputs) -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Contact Information</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name <span class="required">*</span></label>
+                                <input type="text" id="fname" name="first_name" placeholder="Enter your first name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lname">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lname" name="last_name" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email_address" placeholder="e.g. name@example.com" required>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 2: Membership & Preferred Location (Radio & Dropdown) -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Membership & Location</legend>
+
+                        <!-- Radio Buttons -->
+                        <div class="form-group">
+                            <label class="group-label">Select Preferred Contact Method <span class="required">*</span></label>
+                            <div class="radio-options-grid">
+                                <label class="radio-option-card">
+                                    <input type="radio" name="contact_method" value="email" checked required>
+                                    <span class="radio-custom"></span>
+                                    <span>Email Communication</span>
+                                </label>
+                                <label class="radio-option-card">
+                                    <input type="radio" name="contact_method" value="phone">
+                                    <span class="radio-custom"></span>
+                                    <span>Phone Call</span>
+                                </label>
+                                <label class="radio-option-card">
+                                    <input type="radio" name="contact_method" value="text">
+                                    <span class="radio-custom"></span>
+                                    <span>SMS / Text Message</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown List (5 Options) -->
+                        <div class="form-group">
+                            <label for="location">Preferred Studio Location <span class="required">*</span></label>
+                            <select id="location" name="preferred_location" required>
+                                <option value="" disabled selected>-- Select a location --</option>
+                                <option value="downtown">Downtown Sanctuary</option>
+                                <option value="west_end">West End Studio</option>
+                                <option value="riverfront">Riverfront Lounge</option>
+                                <option value="midtown">Midtown Loft</option>
+                                <option value="virtual">Virtual / Online Live Classes</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 3: Class Interests (Checkboxes - At least 4 options) -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Class Interests & Activities</legend>
+
+                        <div class="form-group">
+                            <label class="group-label">What types of classes interest you? <em>(Check all that apply)</em></label>
+                            <div class="checkbox-options-grid">
+                                <label class="checkbox-option-card">
+                                    <input type="checkbox" name="interests" value="vinyasa">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Vinyasa Flow</span>
+                                </label>
+                                <label class="checkbox-option-card">
+                                    <input type="checkbox" name="interests" value="hot_yoga">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Hot Power Yoga</span>
+                                </label>
+                                <label class="checkbox-option-card">
+                                    <input type="checkbox" name="interests" value="restorative">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Restorative & Yin</span>
+                                </label>
+                                <label class="checkbox-option-card">
+                                    <input type="checkbox" name="interests" value="meditation">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Sound Bath & Meditation</span>
+                                </label>
+                                <label class="checkbox-option-card">
+                                    <input type="checkbox" name="interests" value="private_coaching">
+                                    <span class="checkbox-custom"></span>
+                                    <span>Private 1-on-1 Sessions</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 4: Additional Comments (Text Area) -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Comments & Special Requests</legend>
+
+                        <div class="form-group">
+                            <label for="comments">Additional Information or Questions</label>
+                            <textarea id="comments" name="user_comments" rows="5" placeholder="Tell us about your fitness goals, past yoga experience, or any physical injuries we should know about..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Form Action Buttons -->
+                    <div class="form-actions-row">
+                        <button type="submit" class="btn-form-submit">Submit Registration</button>
+                        <button type="reset" class="btn-form-reset">Reset Form</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-trust-bar">
+            <div class="trust-item">
+                <span class="trust-icon">&#129496;</span>
+                <div>
+                    <p><strong>Certified Instructors</strong></p>
+                    <p>Experienced guidance for all levels from beginners to advanced</p>
+                </div>
+            </div>
+                    
+            <div class="trust-item">
+                <span class="trust-icon">&#127807;</span>
+                <div>
+                    <p><strong>Flexible Memberships</strong></p>
+                    <p>Unlimited access to hot yoga, vinyasa, and restorative classes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main-grid">
+            <div class="footer-brand-col">
+                <div class="footer-logo">
+                    <span class="logo-badge">☼</span>
+                    <h3>Sunshine Yoga Studio</h3>
+                </div>
+                <p class="brand-desc">Mindful yoga classes, expert instruction, and a peaceful environment to reconnect your body, mind, and spirit.</p>
+
+                <div class="footer-newsletter">
+                    <h4>Stay Connected & Inspired</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Enter email for class updates & wellness tips..." required>
+                        <button type="submit" class="btn-newsletter">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Classes & Styles</h4>
+                <ul class="footer-links">
+                    <li><a href="register.html">Vinyasa Flow</a></li>
+                    <li><a href="register.html">Hatha Yoga</a></li>
+                    <li><a href="register.html">Hot Yoga</a></li>
+                    <li><a href="register.html">Restorative & Yin</a></li>
+                    <li><a href="register.html">Private Sessions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Schedule & Studio</h4>
+                <ul class="footer-links">
+                    <li><a href="class.html">Weekly Class Schedule</a></li>
+                    <li><a href="#">Studio Guidelines</a></li>
+                    <li><a href="#">Events and Workshops</a></li>
+                    <li><a href="#">Teacher Training</a></li>
+                    <li><a href="#">New Student Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>About Sunshine Yoga Studio</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Our Story & Instructors</a></li>
+                    <li><a href="register.html">Studio Location & Hours</a></li>
+                    <li><a href="class.html">Pricing & Memberships</a></li>
+                    <li><a href="#">Community Outreach</a></li>
+                    <li><a href="#">Terms & Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sunshine Yoga Studios. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <span class="divider">•</span>
+                <a href="#">Terms of Service</a>
+                <span class="divider">•</span>
+                <a href="#">Security & Compliance</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
