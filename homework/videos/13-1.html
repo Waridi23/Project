@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Rock-climbing site">
-        <link rel="icon" href="media/logo.png"
-        <title> Let's CLimb Rocks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Let's Climb Rocks</title>
         <style>
-            html{
+            html {
                 background-color: #904532;
             }
-            body{
+            body {
                 margin: 0 auto;
-                max-width:1200px;
+                max-width: 1200px;
                 background-color: #f5efc6;
                 font-family: 'Verdana', 'Arial', sans-serif;
+                padding: 20px;
             }
-            .card{
+            h1 {
+                text-align: center;
+                color: #642520;
+            }
+
+            /* Card Section Styling */
+            .card {
                 background-color: #642520;
-                padding: 15px;
-                border:13px;
+                padding: 20px;
+                border-radius: 12px; /* Fixed border attribute */
                 box-shadow: 0 8px 24px rgba(236, 153, 161, 0.611);
-                margin: 20px
+                margin: 20px 0;
             }
-            .card p{
+            .card p {
                 line-height: 1.6;
                 color: #f5efc6;
+                margin: 0 0 15px 0;
             }
-            h1{
+            
+            /* Hyperlink Styling */
+            .external-link {
+                display: inline-block;
+                color: #d4af37;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            .external-link:hover {
+                color: #ffffff;
+            }
+
+            /* Media Section Styling (Video & Audio) */
+            .media-section {
+                background-color: #ffffff;
+                padding: 25px;
+                border-radius: 12px;
+                margin: 25px 0;
                 text-align: center;
-
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+            .media-section h2 {
+                color: #642520;
+                margin-top: 0;
+            }
+            .video-container video {
+                width: 100%;
+                max-width: 800px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+            .audio-container {
+                margin-top: 20px;
             }
 
-            .bento-gallery-grid{
+            /* Bento Gallery Styling */
+            .bento-gallery-grid {
                 display: grid;
-                margin-right: 20px;
-                margin-left :20px;
                 grid-template-columns: repeat(4, 1fr);
                 grid-auto-rows: 230px;
                 gap: 1.25rem;
+                margin-top: 20px;
             }
-            .bento-item{
+            .bento-item {
                 position: relative;
                 border-radius: 18px;
                 overflow: hidden;
@@ -53,12 +90,12 @@
                 box-shadow: 0 20px 35px rgba(0, 0, 0, 0.16);
             }
 
-            .bento-large{
+            /* Restored span for 2 columns / 2 rows bento card */
+            .bento-large {
                 grid-column: span 2;
                 grid-row: span 2;
-
             }
-            .bento-overlay{
+            .bento-overlay {
                 position: absolute;
                 inset: 0;
                 background: linear-gradient(
@@ -73,7 +110,13 @@
                 padding: 1.5rem;
                 color: #ffffff;
                 transition: background 0.3s ease;
-
+            }
+            .bento-overlay h3 {
+                margin: 0 0 5px 0;
+            }
+            .bento-overlay p {
+                margin: 0;
+                font-size: 0.9rem;
             }
             .bento-item img {
                 width: 100%;
@@ -87,9 +130,9 @@
                 transform: scale(1.08);
             }
 
-            .bento-tag{
+            .bento-tag {
                 align-self: flex-start;
-                background-color: #d4af37; /* Matching Gold Accent */
+                background-color: #d4af37;
                 color: #111111;
                 font-size: 0.72rem;
                 font-weight: 700;
@@ -100,52 +143,76 @@
                 margin-bottom: 0.6rem;
             }
 
-
+            /* Responsive tweaks */
+            @media (max-width: 768px) {
+                .bento-gallery-grid {
+                    grid-template-columns: 1fr;
+                    grid-auto-rows: 250px;
+                }
+                .bento-large {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+            }
         </style>
     </head>
     <body>
-        <h1> Rock Climbing Fun</h1>
+        <h1>Rock Climbing Fun</h1>
+        
         <section class="card">
-            <p>Rock Climbing Fun has recently opened a new school at the base of Mount Rainier. We have programs for advanced rock climbers as well as for beginners. Rock climbing is a widely popular sport, especially in the state of Washington. This is a sport that if for all ages and all levels of athletes.
+            <p>Rock Climbing Fun has recently opened a new school at the base of Mount Rainier. We have programs for advanced rock climbers as well as for beginners. Rock climbing is a widely popular sport, especially in the state of Washington. This is a sport that is for all ages and all levels of athletes.</p>
+            
+            <p>Want to learn more about rock climbing techniques and safety? 
+               <a href="https://www.nps.gov/mora/planyourvisit/climbing.htm" target="_blank" class="external-link">Visit the Mount Rainier National Park Climbing Guide</a>.
             </p>
         </section>
+        
         <section class="card">
-            <p>Classes run from early morning to mid-afternoon, and private climbing lessons are available. We even have weekend classes if that better fits your schedule. Come join our classes and experience the fun and great exercise that rock climbing can provide. We have many locations to help serve your rock climbing needs near you.
-            </p>
+            <p>Classes run from early morning to mid-afternoon, and private climbing lessons are available[cite: 1]. We even have weekend classes if that better fits your schedule[cite: 1]. Come join our classes and experience the fun and great exercise that rock climbing can provide[cite: 1]. We have many locations to help serve your rock climbing needs near you[cite: 1].</p>
+        </section>
+
+        <section class="media-section">
+            <h2>Watch Us In Action</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="media/RockClimbing.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
         </section>
 
         <div class="bento-gallery-grid">
                     
-            <!-- 1. Main Featured Card (Large 2x2) -->
             <div class="bento-item bento-large">
-                <img src="media/climb1.jpeg" alt="A member succesfully climbs one of our challengers">
+                <img src="media/climb1.jpeg" alt="A member successfully climbs one of our challenges">
                 <div class="bento-overlay">
                     <span class="bento-tag">Sanctuary</span>
-                     <h3>Sunlit Practice Hall</h3>
-                            <p>Natural lighting, warm bamboo flooring, and climate control designed for deep movement.</p>
+                    <h3>Sunlit Practice Wall</h3>
+                    <p>Natural lighting, high walls, and routes designed for deep movement.</p>
                 </div>
             </div>
 
-            <div class="bento-item bento-large">
-                <img src="media/climb2.jpeg" alt="A member succesfully climbs one of our challengers">
+            <div class="bento-item">
+                <img src="media/climb2.jpeg" alt="Climber tackling a bouldering problem">
                 <div class="bento-overlay">
-                    <span class="bento-tag">Sanctuary</span>
-                     <h3>Sunlit Practice Hall</h3>
-                            <p>Natural lighting, warm bamboo flooring, and climate control designed for deep movement.</p>
+                    <span class="bento-tag">Bouldering</span>
+                    <h3>Technique & Balance</h3>
+                    <p>Low height climbing with high intensity movement.</p>
                 </div>
             </div>
 
-            <div class="bento-item bento-large">
-                <img src="media/climb3.jpeg" alt="A member succesfully climbs one of our challengers">
+            <div class="bento-item">
+                <img src="media/climb3.jpeg" alt="Climber reaching top of route">
                 <div class="bento-overlay">
-                    <span class="bento-tag">Sanctuary</span>
-                     <h3>Sunlit Practice Hall</h3>
-                            <p>Natural lighting, warm bamboo flooring, and climate control designed for deep movement.</p>
+                    <span class="bento-tag">Summit</span>
+                    <h3>Peak Achievements</h3>
+                    <p>Pushing limits with top-rope and lead routes.</p>
                 </div>
             </div>
 
         </div>
 
     </body>
-
 </html>
