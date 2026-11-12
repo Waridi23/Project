@@ -167,6 +167,7 @@ FLOATING HEDER & NAVIATION
 
 /* Glow CTA Button */
 .btn-pill-glow {
+    display: inline-block;
     background-color: var(--bg-card);
     color: var(--bg-dark);
     padding: 9px 20px;
@@ -319,60 +320,6 @@ FLOATING HEDER & NAVIATION
     transition: transform 0.2s ease;
 }
 
-/* Right Interactive Floating Badge Card */
-.hero-interactive-card {
-    justify-self: end;
-    animation: floatAmbient 6s ease-in-out infinite alternate, fadeInUp 1s ease-out 0.4s both;
-}
-
-.media-preview-box {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: rgba(13, 43, 34, 0.65);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 12px 20px;
-    border-radius: var(--radius-pill);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
-.play-button-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.play-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--text-white);
-    color: var(--bg-dark);
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 3px;
-    transition: var(--ease-smooth);
-    z-index: 2;
-}
-
-.media-preview-box:hover .play-btn {
-    background-color: var(--accent);
-    transform: scale(1.08);
-}
-
-/* Pulsating Aura Ring */
-.pulse-ring {
-    position: absolute;
-    inset: -6px;
-    border-radius: 50%;
-    border: 2px solid var(--accent);
-    animation: pulseRing 3s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-}
 
 .card-info small {
     display: block;
