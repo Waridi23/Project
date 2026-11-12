@@ -1,74 +1,296 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="animal adoption, dog rescue, cat rescue">
+    <meta name="description" content="Find your new best friend at Paws & Haven Animal Rescue.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="media/logo.png">
+    <title>PawPrint Adoption Center- Home</title>
+</head>
 
-    <head>
-		<meta charset="UTF-8">
-		<meta name ="viewport" content= "width=device-width, initila-scale=1.0">
-		<meta name = "keywords" content= "animal adoption, dog resue, cat rescue">
-		<meta name= "description" content= "">
-		<link rel= "stylesheet" href= "styles/main.css">
-		<link rel="icon" href="media/logo.png">
-		<title>Animal Adoption - Home</title>
+<body>
+    <section class="hero-wrapper">
+        <!-- Floating Navigation Header -->
+        <header class="site-header-floating">
+            <section class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="media/logo.png" alt="Animal Adoption Logo" height="60">
+                    <span class="logo-text">Pawprint Adoption Center</span>
+                </a>
 
-    </head>
+                <nav class="nav-pill">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="info.html" class="nav-link">Info</a></li>
+                        <li><a href="register.html" class="nav-link">Register</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    </ul>
+                </nav>
 
-    <body>
-        <section class="hero-wrapper">
-            <header class="site-header-floating">
-                <section class="header-container">
-
-					<a href="index.html" class="logo">
-						<img src="media/logo.png" alt="Logo image" height="100">
-						<span class="logo-text"> Animal Adoption Name</span>
-					</a>
-
-					<nav class="nav-pill">
-						<ul class="nav-list">
-							<li> <a href="index.html" class="nav-link active">Home</a></li>
-							<li> <a href="info.html" class="nav-link">Info</a></li>
-							<li> <a href ="register.html" class="nav-link"> Register</a></li>
-							<li> <a href ="#gallery" class="nav-link"> Gallery</a></li>
-							<li> <a href="#reviews" class="nav-link">Reviews</a></li>
-
-						</ul>
-					</nav>
-
-                    <section class="header-actions">
-						<a href="#faq" class="btn-ghost"> FAQ</a>
-						<a href="register.html" class="btn-pill-glow"> Adopt Now </a>
-
-                    </section>
-                </section>
-
-            </header>
-
-            <section class="hero-canvas">
-                <section class="hero-img">
-					<img src="media/header.jpeg" alt="Furry background">
-					<div class="hero-overlay-shade"></div>
+                <section class="header-actions">
+                    <a href="#faq" class="btn-ghost">FAQ</a>
+                    <a href="register.html" class="btn-pill-glow">Adopt Now</a>
                 </section>
             </section>
+        </header>
 
-            <section class="hero-content-grid">
-                <section class="hero-text-block">
-						<span class="hero-pill-tag">Transform Your Body & Mind</span>
-						<h1> Nature. <br> Comfort. <br><span class="text-accent-gold"> You. </span></h1>
-						
-						<p> Welcome to Sunshine Yoga Studio, where your peaceful journey begins. We offer state-of-the-art equipment, expert coaching, and a welcoming community for all.</p>
-                        
-                        <section class="hero-cta-group">
-				            <a href ="register.html" class="btn-hero-primary">
-                                <span> Get Started Today</span>
-                                <span class="btn-arrow"> &#8594;</span>
-                            </a>
-                        </section>
-                    </section>
+        <!-- Hero Banner Canvas -->
+        <section class="hero-canvas">
+            <!-- Fixed class name to match CSS (.hero-img-bg) -->
+            <div class="hero-img-bg">
+                <img src="media/header.jpeg" alt="Happy rescue dog and cat waiting for adoption">
+                <div class="hero-overlay-shade"></div>
+            </div>
 
-                </section>
-            </section>
-
+            <!-- Moved INSIDE .hero-canvas so text sits over the image -->
+            <div class="hero-content-grid">
+                <div class="hero-text-block">
+                    <span class="hero-pill-tag">Every Pet Deserves a Loving Home</span>
+                    <!-- Fixed class name to match CSS (.text-accent-yellow) -->
+                    <h1>Love. <br> Loyalty. <br><span class="text-accent-yellow">Forever.</span></h1>
+                    
+                    <p>Welcome to Pawprint Adoption Center, where lifelong friendships begin. Browse adoptable pets, learn about our adoption process, and give a rescue animal a second chance.</p>
+                    
+                    <div class="hero-cta-group">
+                        <!-- Fixed class name to match CSS (.btn-hero) -->
+                        <a href="register.html" class="btn-hero">
+                            <span>Start Adoption</span>
+                            <span class="btn-arrow">&#8594;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
-    </body>
+    </section>
+
+	<main>
+		<section class="section-container intro-banner">
+			<span class= "section-badge"> Our Mission </span>
+			<h2>Adopt a dog with us!</h2>
+			<p class="section-subtitle">We have a dog for everyone, whether you need a young playful pup, or an older laid back dog, we have a dog for you!</p>
+		</section>
+		
+		<section id="gallery" class="section-container">
+			<div class="section-header">
+				<span class="section-badge"> Meet Our Pups! </span>
+				<h2>What kinds of breeds do we have?</h2>
+				<p class="section-subtitle">Here at the PawPrint Adoption Center, we have several breeds available for adoption, such as:</p>
+				
+			</div>
+			<ul class="breed-grid">
+                <li class="breed-card">
+                    <div class="breed-img-wrap">
+                        <img src="media/golden.jpg" alt="Smiling Golden Retriever ready for adoption">
+                    </div>
+                    <div class="breed-info">
+                        <h3>Golden Retriever</h3>
+                        <span class="breed-tag">Friendly &amp; Active</span>
+                    </div>
+                </li>
+
+                <li class="breed-card">
+                    <div class="breed-img-wrap">
+                        <img src="media/lab.jpg" alt="Playful Labrador Retriever">
+                    </div>
+                    <div class="breed-info">
+                        <h3>Labrador</h3>
+                        <span class="breed-tag">Loyal &amp; Gentle</span>
+                    </div>
+                </li>
+
+                <li class="breed-card">
+                    <div class="breed-img-wrap">
+                        <img src="media/beagle.jpg" alt="Curious Beagle puppy">
+                    </div>
+                    <div class="breed-info">
+                        <h3>Beagle</h3>
+                        <span class="breed-tag">Curious &amp; Merry</span>
+                    </div>
+                </li>
+
+                <li class="breed-card">
+                    <div class="breed-img-wrap">
+                        <img src="media/great.jpg" alt="Calm Great Pyrenees">
+                    </div>
+                    <div class="breed-info">
+                        <h3>Great Pyrenees</h3>
+                        <span class="breed-tag">Calm &amp; Protective</span>
+                    </div>
+                </li>
+
+                <li class="breed-card">
+                    <div class="breed-img-wrap">
+                        <img src="media/husky.jpg" alt="Energetic Siberian Husky">
+                    </div>
+                    <div class="breed-info">
+                        <h3>Husky</h3>
+                        <span class="breed-tag">Energetic &amp; Smart</span>
+                    </div>
+                </li>
+            </ul>
+			
+			<div class="section-cta-bar">
+				<p>We have additional breeds for sale as well, learn more <a href="register.html">here.</a></p>
+			</div>
+		</section>
+		
+		<section class="process-band">
+			<div class="section-container">
+                <div class="section-header light-text">
+                    <span class="section-badge badge-dark">Simple Steps</span>
+                    <h2>How the Adoption Process Works</h2>
+                </div>
+
+                <ol class="process-grid">
+                    <li class="process-card">
+                        <span class="step-number">1</span>
+                        <h3>Browse &amp; Visit</h3>
+                        <p>Browse our available dogs online or visit our shelter in person to meet them.</p>
+                    </li>
+                    <li class="process-card">
+                        <span class="step-number">2</span>
+                        <h3>Apply Online</h3>
+                        <p>Fill out an adoption application to help us find your best personality match.</p>
+                    </li>
+                    <li class="process-card">
+                        <span class="step-number">3</span>
+                        <h3>Meet-and-Greet</h3>
+                        <p>Schedule a supervised meet-and-greet with your chosen dog at our center.</p>
+                    </li>
+                    <li class="process-card">
+                        <span class="step-number">4</span>
+                        <h3>Welcome Home</h3>
+                        <p>Complete the adoption paperwork and take your new best friend home.</p>
+                    </li>
+                </ol>
+            </div>
+		</section>
+
+		<section id="faq" class="section-container faq-section">
+			<div class="section-header">
+				<span class= "section-badge">Got Questions? </span>
+				<h2>Frequently Asked Questions</h2>
+				
+			</div>
+			
+			<div class="faq-list">
+			<details class="faq-item open">
+				<summary>What is included in the adoption fee?</summary>
+				<p>All adopted dogs are spayed or neutered, microchipped, and up to date on all vaccinations.</p>
+			</details>
+			
+			<details class="faq-item">
+				<summary>Can I bring my current pets to meet a dog?</summary>
+				<p>Yes, we encourage bringing resident dogs to the center for a supervised introduction before finalizing an adoption.</p>
+			</details>
+			
+			<details class="faq-item">
+				<summary>What are your shelter hours?</summary>
+				<p>We are open Tuesday through Sunday from 10:00 AM to 6:00 PM.</p>
+			</details>
+			
+		</section>
+	</main>
+<!--==================================================================
+FOOTER
+==================================================================-->
+<!-- Topbar: Shelter Guarantees / Trusted Badges -->
+	<footer class="site-footer">
+		<div class="footer-trust-bar">
+			<div class="trust-item">
+				<span class="trust-icon">&#128062;</span>
+				<div>
+					<p><strong>100% Vet-Checked &amp; Vaccinated</strong></p>
+					<p>Every dog is spayed or neutered, microchipped, and up to date on shots</p>
+				</div>
+			</div>
+					
+			<div class="trust-item">
+				<span class="trust-icon">&#127968;</span>
+				<div>
+					<strong>Lifetime Rescue Support</strong>
+					<p>Post-adoption training tips and behavioral guidance for every family</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Middle Section: Brand, Newsletter & Nav Columns -->
+		<div class="footer-main-grid">
+					
+			<!-- Brand & Newsletter Column -->
+			<div class="footer-brand-col">
+				<div class="footer-logo">
+					<span class="logo-badge">&#128054;</span>
+					<h3>PawPrint Adoption Center</h3>
+				</div>
+				<p class="brand-desc">Dedicated to rescuing, rehabilitating, and rehoming dogs of all ages and breeds into loving forever families.</p>
+
+				<!-- New Arrival Alert Form -->
+				<div class="footer-newsletter">
+					<h4>New Arrival &amp; Event Alerts</h4>
+					<form action="#" method="post" class="newsletter-form">
+						<input type="email" placeholder="Enter email for adoptable dog alerts..." required>
+						<button type="submit" class="btn-newsletter">Subscribe</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Navigation Columns -->
+			<div class="footer-col">
+				<h4>Adoptable Breeds</h4>
+				<ul class="footer-links">
+					<li><a href="info.html">Golden Retrievers</a></li>
+					<li><a href="info.html">Labradors</a></li>
+					<li><a href="info.html">Beagles</a></li>
+					<li><a href="info.html">Great Pyrenees</a></li>
+					<li><a href="info.html">Siberian Huskies</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Adoption &amp; Shelter</h4>
+				<ul class="footer-links">
+					<li><a href="info.html">Adoption Fees &amp; Info</a></li>
+					<li><a href="register.html">Adoption Application</a></li>
+					<li><a href="register.html">Schedule a Meet &amp; Greet</a></li>
+					<li><a href="#faq">Shelter Hours &amp; FAQs</a></li>
+					<li><a href="#">First-Time Owner Guide</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>About PawPrint</h4>
+				<ul class="footer-links">
+					<li><a href="#">Our Rescue Mission</a></li>
+					<li><a href="#">Foster &amp; Volunteer</a></li>
+					<li><a href="#">Donate Supplies</a></li>
+					<li><a href="#reviews">Happy Adoption Stories</a></li>
+					<li><a href="#">Terms &amp; Policies</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Bottom Bar: Legal & Copyright -->
+		<div class="footer-bottom">
+			<p>&copy; 2026 PawPrint Adoption Center. All rights reserved.</p>
+
+			<div class="footer-legal-links">
+				<a href="#">Privacy Policy</a>
+				<span class="divider">&bull;</span>
+				<a href="#">Terms of Adoption</a>
+				<span class="divider">&bull;</span>
+				<a href="#">Shelter Rules</a>
+			</div>
+		</div>
+	</footer>
+
+	
+	
+</body>
+
 
 </html>
