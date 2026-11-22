@@ -148,7 +148,7 @@ a {
 }
 
 .nav-link.active,
-.nav-link:active {
+.nav-link:active{
     background-color: var(--accent-yellow);
     color: var(--text-dark);
     font-weight: 700;
